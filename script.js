@@ -17,7 +17,10 @@ window.addEventListener('load', function() {
                 function shuffle(arr) {
                 var shuffledArr = arr.sort((a,b) => 0.5 - Math.random());
                 }
-        shuffle(pics);  
+        shuffle(pics); 
+        
+        popUpContainer.style.opacity = 1;
+        popUpContainer.style.pointerEvents = "auto";
         
         startBtn.addEventListener('click', function() {
             popUpContainer.style.opacity = 0;
